@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<HTML lang="ja">
+<head>
+    <meta charset="S-JIS" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>お問い合わせフォーム（サンプル）</title>
+    <!-- システム用CSS -->
+    <link rel="stylesheet" href="/qubo/bundles/artisqubo/common/vender/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/qubo/bundles/artisqubo/common/vender/jquery-ui/themes/base/jquery-ui.min.css">
+    <!-- //システム用CSS -->
+    <!-- 共通CSS -->
+    <link rel="stylesheet" type="text/css" href="/qubo/bundles/artisqubo/common-form/common/css/master.css" media="screen,all" />
+    <link rel="stylesheet" type="text/css" href="/qubo/bundles/artisqubo/common-form/common/css/base/print.css" media="print" />
+    <!-- //共通CSS -->
+    <!-- テンプレートデザイン -->
+    <link rel="stylesheet" type="text/css" href="/qubo/bundles/artisqubo/common-form/themes/simple01/green/css/master.css" media="screen,all" />
+    <link rel="stylesheet" type="text/css" href="/qubo/bundles/artisqubo/common-form/themes/simple01/green/css/base/print.css" media="print" />
+    <!-- //テンプレートデザイン -->
+    <!-- 共通JS -->
+    <script type="text/javascript" src="/qubo/bundles/artisqubo/common-form/common/js/jquery.js"></script>
+    <script type="text/javascript" src="/qubo/bundles/artisqubo/common-form/common/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/qubo/bundles/artisqubo/common-form/common/js/jquery.ui.datepicker-ja.min.js"></script>
+    <script type="text/javascript" src="/qubo/bundles/artisqubo/common-form/common/js/contents.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="S-JIS"></script>
+    <!-- //共通JS -->
+    <!-- テンプレートデザイン -->
+    <script type="text/javascript" src="/qubo/bundles/artisqubo/common-form/themes/simple01/green/js/contents.js"></script>
+    <!-- //テンプレートデザイン -->
+
+
+    <style>
+        .error-main-txt-area,
+        .bottom-btn-area,
+        .bottom-txt-area,
+        .contents-area,
+        .sig-area,
+        .copy-area,
+        .step-area,
+        .h1-title-area,
+        .logo-area {
+            width: 960px;/*幅*/
+        }
+        #body-in,
+        .container-wrapper {
+            min-width: 960px;/*幅*/
+        }
+        .logo-area img {
+            max-width: 960px;/*幅*/
+        }
+        .contents-area .form-box-table .item-title {
+            font-size:14px;/*項目列*/
+        }
+        label, input, button, select, textarea,
+        .contents-area .form-box-table .item-input {
+            font-size:14px;/*回答列*/
+        }
+
+
+    </style>
+
+    
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MNPMS4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNPMS4');</script>
+<!-- End Google Tag Manager -->
+<div id="body-in">
+    <div class="container-wrapper">
+
+        
+        <!--** Header *********************************************-->
+        <header>
+            <div class="header-wrapper">
+                <div class="header-area clearfix">
+
+                                        <div class="logo-wrapper">
+                        <div class="logo-area">
+                            <p class="position-left">
+                                <span>
+                                                                        <img src="/qubo/uploaded/43e63a8118d521c2828b26adbc21a09e/logo/prod/1414416178521230479.jpg" alt="会社名・組織名">
+                                                                    </span>
+                            </p><!--position-centerで中央位置-->
+                        </div>
+                    </div><!--/logo-wrapper-->
+                    
+                                            <div class="h1-title-wrapper">
+                            <div class="h1-title-area">
+                                <h1><span>お問い合わせフォーム（サンプル）</span></h1>
+                            </div>
+                        </div><!--//h1-title-wrapper-->
+                    
+                                        <div class="step-wrapper">
+                        <div class="step-area">
+                            <ul class="clearfix step01-now">
+                                <li class="step01"><p><span class="small">STEP1</span><span class="txt">情報の入力</span></p></li>
+                                <li class="step02"><p><span class="small">STEP2</span><span class="txt">入力内容の確認</span></p></li>
+                                <li class="step03"><p><span class="small">STEP3</span><span class="txt">受付完了</span></p></li>
+                            </ul>
+                        </div>
+                    </div><!--//step-wrapper-->
+                    
+                                        
+                    
+
+                </div><!--//header-area-->
+            </div><!--//header-wrapper-->
+        </header>
+        <hr>
+        <!--** //Header *********************************************-->
+        <!--** Contents *********************************************-->
+        <div class="contents-wrapper clear">
+            <div class="contents-area clearfix">
+                <form role="form" action="https://req.qubo.jp/qubo/form/confirm/KZTxekEm" method="post" enctype="multipart/form-data">
+
+                    <!-- loop area START-->
+                                        
+                                                                <!--== テキスト =====================-->
+        <div class="outline-area txt-only-box">
+            <div class="outline-inner">
+                <div class="txt-area">お客さまからのご質問をお問い合わせフォームにて受け付けております。<div>必要事項をご記入の上、「入力内容の確認画面へ」を押してください。</div></div>
+            </div><!--//outline-inner-->
+        </div><!--//outline-area-->
+        <!--== //テキスト =====================-->
+    
+                        
+
+
+                    
+                                                                <!--== 見出し =====================-->
+        <div class="h2-title-area">
+            <div class="h2-title-inner">
+                <h2><span>お問い合わせ内容を入力してください。</span></h2>
+            </div>
+        </div><!--//h2-title-area-->
+        <!--== //見出し =====================-->
+    
+                        
+
+
+                    
+                                                    <!--== テキストエリア =====================-->
+<div class="form-box item-textarea">
+    <div class="form-box-table">
+        <div class="item-title">
+                            <span class="error">お問い合わせ内容</span>
+                    </div>
+        <div class="item-input">
+                                    <p>
+                <textarea
+                        class="input-txt"
+                        rows="5"
+                        name="col__521__2__0__0"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        placeholder=""
+                        ></textarea>
+            </p>
+                    </div>
+    </div><!--//form-box-table-->
+</div><!--//form-box-->
+<!--== //テキストエリア =====================-->
+
+                        
+
+
+                    
+                                                                <!--== 見出し =====================-->
+        <div class="h2-title-area">
+            <div class="h2-title-inner">
+                <h2><span>お客様情報を入力してください。</span></h2>
+            </div>
+        </div><!--//h2-title-area-->
+        <!--== //見出し =====================-->
+    
+                        
+
+
+                    
+                                                                <!--== 名前 =====================-->
+        <div class="form-box item-name-box01">
+            <div class="form-box-table">
+                <div class="item-title">
+                                            <span class="error">お名前</span>
+                                    </div>
+                <div class="item-input">
+                                                            <p>
+                        <input
+                                class="input-txt"
+                                type="text"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                name="col__523__9__0__0"
+                                value=""
+                                >
+                    </p>
+                                        <small class="small-txt">例）山田　太郎</small>
+                                    </div>
+            </div><!--//form-box-table-->
+        </div><!--//form-box-->
+        <!--== //名前 =====================-->
+    
+                        
+
+
+                    
+                                                                <!--== テキストボックス =====================-->
+        <div class="form-box item-textbox-single">
+            <div class="form-box-table">
+                <div class="item-title">
+                                            <span>会社名</span>
+                                    </div>
+                <div class="item-input">
+                                                            <p>
+                        <input
+                                class="input-txt input-size-m"
+                                type="text"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                name="col__524__1__0__0"
+                                value=""
+                                placeholder=""
+                                >&nbsp;                    </p>
+                                        <small class="small-txt">例）株式会社アーティス</small>
+                                    </div>
+            </div><!--//form-box-table-->
+        </div><!--//form-box-->
+        <!--== //テキストボックス =====================-->
+    
+                        
+
+
+                    
+                                                        <!--== 住所 =====================-->
+    <div class="form-box item-address-box01">
+        <div class="form-box-table">
+            <div class="item-title">
+                                    <span>ご住所</span>
+                            </div>
+            <div class="item-input">
+                <div class="address-input">
+
+                                                                                                                                                                                                                                        <p class="zipcode">〒&nbsp;
+                        <input
+                                class="input-txt width01"
+                                type="text"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                value=""
+                                name="col__525__13__0__0"
+                                >
+                        <span class="zipcode-search">
+                            <input class="search-btn" name="button" type="button" value="住所検索" onClick="AjaxZip3.zip2addr('col__525__13__0__0', '' ,'col__525__13__1__0','col__525__13__2__0');">
+                        </span>
+                    </p>
+                    
+                    <div class="col2-box-wrap">
+                        <div class="col2-box">
+                            <div class="sub-item-title"><span>都道府県</span></div>
+                            <div class="sub-item-input">
+                                <p>
+                                    <input
+                                            class="input-txt width01"
+                                            type="text"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                            value=""
+                                            name="col__525__13__1__0"
+                                            >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col2-box">
+                            <div class="sub-item-title"><span>市区町村番地</span></div>
+                            <div class="sub-item-input">
+                                <p>
+                                    <input
+                                            class="input-txt width02"
+                                            type="text"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                            value=""
+                                            name="col__525__13__2__0"
+                                            >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col2-box">
+                            <div class="sub-item-title"><span>マンション/ビル名</span></div>
+                            <div class="sub-item-input">
+                                <p>
+                                    <input
+                                            class="input-txt width03"
+                                            type="text"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                            value=""
+                                            name="col__525__13__3__0"
+                                            >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </div><!--//form-box-table-->
+    </div><!--//form-box-->
+    <!--== //住所 =====================-->
+
+                        
+
+
+                    
+                                                                <!--== 電話番号 =====================-->
+        <div class="form-box item-tel-box01-single">
+            <div class="form-box-table">
+                <div class="item-title">
+                                            <span>電話番号</span>
+                                    </div>
+                <div class="item-input">
+                                                                                                    <p>
+                                                    <input
+                                    class="input-txt"
+                                    type="text"
+                                    autocorrect="off"
+                                    autocapitalize="off"
+                                    name="col__526__11__0__0"
+                                    value=""
+                                    >
+                                            </p>
+                                        <small class="small-txt">例）053-459-1700</small>
+                                    </div>
+            </div><!--//form-box-table-->
+        </div><!--//form-box-->
+        <!--== //電話番号 =====================-->
+    
+                        
+
+
+                    
+                                                                <!--== メールアドレス（確認用有り） =====================-->
+        <div class="form-box item-mail-box02">
+            <div class="form-box-table">
+                <div class="item-title">
+                                            <span class="error">メールアドレス</span>
+                                    </div>
+                <div class="item-input">
+                                                            <p>
+                        <input
+                                class="input-txt width01"
+                                type="text"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                name="col__527__10__0__0"
+                                value=""
+                                >
+                    </p>
+                    <p class="mail-sub-txt">▼確認のため、再度メールアドレスの入力をお願いします。</p>
+                                                            <p>
+                        <input
+                                class="input-txt width02"
+                                type="text"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                name="col__527__10__1__0"
+                                value=""
+                                >
+                    </p>
+                                        <small class="small-txt">例）abc.asobou.co.jp</small>
+                                    </div>
+            </div><!--//form-box-table-->
+        </div><!--//form-box-->
+        <!--== //メールアドレス（確認用有り） =====================-->
+    
+                        
+
+
+                    
+                                                                <!--== 見出し =====================-->
+        <div class="h2-title-area">
+            <div class="h2-title-inner">
+                <h2><span>個人情報の取り扱いについて</span></h2>
+            </div>
+        </div><!--//h2-title-area-->
+        <!--== //見出し =====================-->
+    
+                        
+
+
+                    
+                                                                <!--== テキスト =====================-->
+        <div class="outline-area txt-only-box">
+            <div class="outline-inner">
+                <div class="txt-area"><div style=""><div style=""><span style="font-family: Arial, Verdana;"><span style="font-size: 13.3333px;">下記事項をご確認の上、同意していただける場合は[同意する]にチェックを入れてください。</span></span></div></div></div>
+            </div><!--//outline-inner-->
+        </div><!--//outline-area-->
+        <!--== //テキスト =====================-->
+    
+                        
+
+
+                    
+                                                    
+    <div class="agreement-area">
+        <div class="agreement-area-inner">
+            <div class="item-agreement">
+                                    <textarea readonly>&lt;&lt;ここに個人情報保護方針が入ります。&gt;&gt; &lt;&lt;ここに個人情報保護方針が入ります。&gt;&gt; &lt;&lt;ここに個人情報保護方針が入ります。&gt;&gt; &lt;&lt;ここに個人情報保護方針が入ります。&gt;&gt; &lt;&lt;ここに個人情報保護方針が入ります。&gt;&gt; &lt;&lt;ここに個人情報保護方針が入ります。&gt;&gt;</textarea>
+                                                                <div class="item-agreement-check-area">
+                    <label><input
+                                type="checkbox"
+                                name="col__769__16__0__0"
+                                value="個人情報の取扱いに同意する"
+                                                        ><span>個人情報の取扱いに同意する</span></label>
+                </div>
+            </div>
+        </div><!--//form-box-table-->
+    </div><!--//form-box-->
+
+
+
+                        
+
+
+                    
+                                                                <!--== テキスト =====================-->
+        <div class="outline-area txt-only-box">
+            <div class="outline-inner">
+                <div class="txt-area"><div style="text-align: center;">[入力内容の確認画面へ] ボタンをクリックして入力内容のご確認をお願いします。<br />ご入力、誠にありがとうございました。</div></div>
+            </div><!--//outline-inner-->
+        </div><!--//outline-area-->
+        <!--== //テキスト =====================-->
+    
+                        
+
+
+                    
+                                                                                    <!--== bottom btn =====================-->
+    <div class="bottom-btn-wrapper">
+        <div class="bottom-btn-area">
+            <p class="step01-btn"><input name="submit" type="submit" value="入力内容の確認画面へ" /></p>
+        </div>
+    </div><!--//bottom-btn-wrapper-->
+    <!--== //bottom btn =====================-->
+
+                        
+
+
+                                        <!-- loop area END -->
+
+                    
+
+                    <input type="hidden" name="delete_target_image" value="" id="delete-target-image" />
+                    <input type="hidden" name="csrf_token" value="H720dsam4ZzRp_w8BaeatitR3U9WanY5yI8yPcC27m4">
+                </form>
+            </div><!--//contents-area-->
+        </div><!--//contents-wrapper-->
+        <hr>
+        <!--** //Contents *********************************************-->
+
+                <!--** Footer *********************************************-->
+        <footer>
+            <div class="footer-wrapper clear">
+                <div class="footer-area clearfix">
+
+                                        <div class="sig-wrapper">
+                        <div class="sig-area clearfix">
+                                                        <div class="name">会社名・組織名</div>
+                                                                                    <div class="address">〒000-0000 □□□□□□□□□□□□□□□□□□□□<br />
+TEL:000-000-0000 / FAX:000-000-0000</div>
+                                                    </div>
+                    </div><!--//copy-wrapper-->
+                    
+                                        <div class="copy-wrapper">
+                        <div class="copy-area">
+                            <p>copyright? □□□□ All rights reserved.</p>
+                        </div>
+                    </div><!--//copy-wrapper-->
+                                    </div><!--//footer-area-->
+            </div><!--//footer-wrapper-->
+        </footer>
+        <hr>
+        <!--** //Footer *********************************************-->
+        
+    </div><!--//container-wrapper-->
+</div><!--//body-in-->
+<input type="hidden" id="themes-path" value="/qubo/bundles/artisqubo/common-form/themes/simple01/green"/>
+<script type="text/javascript" src="/qubo/bundles/artisqubo/common-form/common/js/util.js"></script>
+</body>
+</html>
