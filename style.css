@@ -3,7 +3,7 @@
 
 
 body {
-	font-family: "ÉÅÉCÉäÉI", Courier, "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro";
+	font-family: "ü‡ÉSÉVÉbÉN", "ü‡ÉSÉVÉbÉNëÃ", "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro";
 	font-size: 70%;
 	line-height: 1;
 	color: #333333;
@@ -98,11 +98,11 @@ a:hover img.hover{
 }
 
 #header h2 {
-	font-size: 10px;
-	line-height: 20px;
+	font-size: 20px;
+	line-height: 10px;
 	padding-left: 30px;
 	padding-bottom: 1px;
-	background-color: #aa00f5; 
+	background-color: #9900f1; 
 }
 #header h3 {
 	font-size: 10px;
@@ -180,19 +180,27 @@ ul#menu img {
 	padding-top: 30px;
 }
 
-/*h2ÅAh3*/
-#main h2 {
-	font-size: 150%;
+
+#main h1 {
+	font-size: 200%;
 	color: #000000;
 	background-color: #ffffff;
 	padding: 15px 0 0 30px;
 	line-height: 30px;
 
 }
+/*h2ÅAh3*/
+#main h2 {
+	font-size: 180%;
+	color: #000000;
+	background-color: #ffffff;
+	line-height: 10px;
+
+}
 
 #main h3 {
         float: right;
-	font-size: 230%;
+	font-size: 180%;
 	color: #000000;
 	background-color: #ffffff;
 	padding: 2px 0 0 20px;
@@ -228,7 +236,16 @@ ul#menu img {
 	background-color: #ffffff;
 
 }
+#main h7 {
+    font-size: 140%
+}
 
+#main hr {
+ height: 3px;
+ background-color: #9900f1;
+ width: 100%;
+ border: none;
+}
 
 
 
@@ -376,7 +393,7 @@ div.space2{
 #footer {
 	clear: both;
 	background-image: url(images/footer_bg.gif);
-	background-color: #aa00f5;
+	background-color: #9900f1;
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -453,5 +470,61 @@ p#warimasi{
    max-width: 60%;
    margin-right: auto;
    margin-left : auto;
-   background-color: #aa00f5
+   background-color: #9900f1
+}
+
+/* -------------------- */
+/* Å•óøã‡ï\ÇÃëïè¸ */
+/* -------------------- */
+table{
+  width: 100%;
+  border-collapse:separate;
+  border-spacing: 0;
+}
+
+table th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+table th:last-child{
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #a76690;
+}
+
+table th{
+  text-align: left
+  color:#FFFFFF;
+  background: linear-gradient(#ac9ebc,#9900f1);
+  font-size:130%;
+  border-left: 1px solid #a76690;
+  border-top: 1px solid #a76690;
+  border-bottom: 1px solid #a76690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  width: 50%;
+  padding: 8px 0;
+}
+
+table td{
+  text-align: left
+  font-size:10%;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  font-size:130%;
+  width: 50%;
+  padding: 8px 0;
+}
+
+table td:last-child{
+  border-right: 1px solid #000000;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
 }
